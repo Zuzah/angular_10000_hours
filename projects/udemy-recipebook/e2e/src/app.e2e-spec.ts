@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('recipebook-udacity app is running!');
+    expect(page.getTitleText()).toEqual('udemy-recipebook app is running!');
   });
 
   afterEach(async () => {

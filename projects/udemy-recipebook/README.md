@@ -1,4 +1,4 @@
-# RecipebookUdacity
+# Udemy - RecipeBook
 
 This project is based on the 'Angular - The Complete Guide' by Maximilian Schwarzmüller. This covers "Section 3: The Basics"
 
