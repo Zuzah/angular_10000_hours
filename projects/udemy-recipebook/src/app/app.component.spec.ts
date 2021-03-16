@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'recipebook-udacity'`, () => {
+  it(`should have as title 'udemy-recipebook'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('recipebook-udacity');
+    expect(app.title).toEqual('udemy-recipebook');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('recipebook-udacity app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('udemy-recipebook app is running!');
   });
 });
