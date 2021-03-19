@@ -1,0 +1,22 @@
+
+.parent-container {
+    background-color: midnightblue;
+    width: 400px;
+    color: white;
+    height: 250px;
+    margin-left: 30px;
+    margin-top: 100px;
+    overflow: hidden;
+    float: left;
+
+    & mat-card {
+        min-width: 300px;
+        max-width: 300px;
+        margin-left: 10px;
+        width: 60%;
+        font: green; 
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    }
+
+}

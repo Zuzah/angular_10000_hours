@@ -1,0 +1,28 @@
+
+.child-container {
+    float: left;
+    background-color: skyblue;
+    height: 150px;
+    width: 210px;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+
+    div {
+        margin-left: 20px;
+
+        input {
+            width: 150px;
+            margin-bottom: 10px;
+
+        }
+    }
+
+
+}
+.submit-button {
+    position: relative;
+    width: 150px;
+
+    
+}
