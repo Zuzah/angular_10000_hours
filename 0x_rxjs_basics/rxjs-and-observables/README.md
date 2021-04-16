@@ -1,5 +1,22 @@
 # RxjsAndObservables
 
+This section will cover RxJS, Observables, and RxJS Operators (pipe, map, tap)
+
+## RxJS Operators
+
+<b>map:</b> Is used to transform the emitted item from a subscribed data stream
+
+<b>tap:</b> Is used to 'tap' into the stream without modifying it. Often used for logging
+
+<b>take:</b> Is used to emit a specified number of items from a subscribed data stream and then completes
+
+![rxjs-image](./assets/images/01-rxjs-marble-of-from-operators.png)
+
+![rxjs-image](./assets/images/rxjs-demo.png)
+
+The above operators are in use in the component: rxjs-example
+# Angular Version: 10
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
 
 ## Development server
