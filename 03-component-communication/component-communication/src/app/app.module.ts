@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { PtoCParerntComponent  } from './parent-to-child/parent/p-to-c-parent.component';
 import { PtoCChildComponent } from './parent-to-child/child/p-to-c-child.component';
 
-import { CtoPChildComponent } from './child-to-parent/parent/child/c-to-p-child.component';
+import { CtoPChildAComponent } from './child-to-parent/parent/childA/c-to-p-childA.component';
+import { CtoPChildBComponent } from './child-to-parent/parent/childB/c-to-p-childB.component';
 import { CtoPParerntComponent } from './child-to-parent/parent/c-to-p-parent.component';
 
 import { SiblingToSiblingComponent } from './sibling-to-sibling/sibling-to-sibling.component';
@@ -16,6 +17,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatButtonModule} from '@angular/material/button';
 import { MatCardModule} from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatGridListModule } from '@angular/material/grid-list';
+
+import { SiblingAComponent } from './sibling-to-sibling/sibling-a/sibling-a.component';
+import { SiblingBComponent } from './sibling-to-sibling/sibling-b/sibling-b.component';
+
 
 @NgModule({
   declarations: [
@@ -25,11 +32,14 @@ import { MatCardModule} from '@angular/material/card';
     PtoCChildComponent,
 
     // Pair for Child-to-Parent Communication
-    CtoPChildComponent,
+    CtoPChildAComponent,
+    CtoPChildBComponent,
     CtoPParerntComponent,
 
     SiblingToSiblingComponent,
-    UrlCommunicationComponent
+    UrlCommunicationComponent,
+    SiblingAComponent,
+    SiblingBComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +47,9 @@ import { MatCardModule} from '@angular/material/card';
     BrowserAnimationsModule,
     FormsModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

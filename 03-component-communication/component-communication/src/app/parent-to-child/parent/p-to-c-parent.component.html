@@ -1,14 +1,13 @@
 <div class="parent-container">
     <p>Parent Container</p>
     <div>
-        <!-- The property below 'messageFromChild' comes
-        from resolving the $event object handled in the div below -->
-        <mat-card>Child Message: {{ messageFromChild }}</mat-card>
+        <mat-card>Message to Child:
+            <input type="text" [(ngModel)]="messageToChild">
+        </mat-card>
     </div>
     <div>
-        <!-- Note: Using the Child Template, we use the Parent's 
-        event handler to grab the $event which is emitted from child -->
-        <app-p-to-c-child  (messageToParentEvent)="messageEventHandler($event)"></app-p-to-c-child>
+        <!-- The parent html injects the payload data into the child at its attribute-->
+        <app-p-to-c-child [messageData]="messageToChild"></app-p-to-c-child>
     </div>
    
 </div>

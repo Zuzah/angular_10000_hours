@@ -1,0 +1,21 @@
+.child-container {
+    float: right;
+    background-color: pink;
+    height: 150px;
+    width: 160px;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+
+    div {
+        margin-left: 20px;
+
+        input {
+            width: 150px;
+            margin-bottom: 10px;
+
+        }
+    }
+
+
+}

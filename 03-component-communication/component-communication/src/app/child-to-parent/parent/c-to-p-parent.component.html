@@ -3,12 +3,20 @@
     <div>
         <!-- The property below 'messageFromChild' comes
         from resolving the $event object handled in the div below -->
-        <mat-card>Child Message: {{ messageFromChild }}</mat-card>
+        <mat-card>Message from Child {{ messageFromChild }}</mat-card>
     </div>
-    <div>
-        <!-- Note: Using the Child Template, we use the Parent's 
-        event handler to grab the $event which is emitted from child -->
-        <app-c-to-p-child  (messageToParentEvent)="messageEventHandler($event)"></app-c-to-p-child>
+    <div class="children"> 
+        <div>
+            <!-- Note: Using the Child Template, we use the Parent's 
+            event handler to grab the $event which is emitted from child -->
+            <app-c-to-p-childA  (messageToParentEvent)="messageEventHandler($event)"></app-c-to-p-childA>
+        </div>
+
+        <div>
+            <!-- Note: Using the Child Template, we use the Parent's 
+            event handler to grab the $event which is emitted from child -->
+            <app-c-to-p-childB></app-c-to-p-childB>
+        </div>
     </div>
    
 </div>

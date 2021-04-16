@@ -25,8 +25,15 @@ There are 4 ways in which Angular can pass data between components
 
 ## 2. Child to Parent
 
+There are 2 methods to do this:
+
+<b>I) Via Output() + Emitter + Event Handler</b>
+
+<b>II) Via ViewChild()</b>
+
 Sample: See ./component-communication/src/app/child-to-parent
 
+### I) Via Output() + Emitter + Event Handler
 ![image](assets/images/parent-to-child-communication.png "json form")
 
 The following outlines how a Child component can communicate with a Parent component
@@ -73,6 +80,10 @@ yourEmitterMethod(data: string) {
     (messageToParentEvent)="messageEventHandler($event)">
 </child-component>
 ```
+
+### II) Via ViewChild()
+
+
 
 
 

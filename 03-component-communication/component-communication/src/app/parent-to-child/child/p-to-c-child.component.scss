@@ -11,10 +11,10 @@
     div {
         margin-left: 20px;
 
-        input {
-            width: 150px;
-            margin-bottom: 10px;
-
+        mat-label {
+            color: black;
+            background-color: white;
+            width: 100%;
         }
     }
 

@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PtoCParerntComponent implements OnInit {
   
-  public messageFromChild = '';
+  public messageToChild = '';
   
   // The Parent Class has to handle the value provided by its children
 
   messageEventHandler($event: any) {
-    this.messageFromChild = $event; // we get the $event object pulled from the child html template
+    this.messageToChild = $event; // we get the $event object pulled from the child html template
   }
 
   constructor() { }

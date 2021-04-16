@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-p-to-c-child',
@@ -7,16 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PtoCChildComponent implements OnInit {
 
-  // TODO: make an Event Emitter to send outwards
-
-
-  messageData: string = '';
+  // The @Input() indicates the data will be supplied by a Parent component
+  @Input() messageData: string = '';
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
-
-
 }
