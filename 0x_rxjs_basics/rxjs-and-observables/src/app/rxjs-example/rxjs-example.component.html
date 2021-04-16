@@ -1,0 +1,23 @@
+
+<div class="rxjs-area">
+    <div style="float: left;">
+        <mat-label>Original Data Stream</mat-label>
+    </div>
+    <div class="container-01">
+        <div *ngFor="let item of myNumberDataStream">
+            <mat-card class="rxjs-item">{{ item }}</mat-card>
+        </div>
+    </div>
+</div>
+<p style="text-align: center;"><i class="arrow down"></i></p>
+<br/>
+<div class="rxjs-area">
+    <div style="float: left;">
+        <mat-label>Altered Data via RxJS Operators</mat-label>
+    </div>
+    <div class="container-02">
+        <div *ngFor="let item of resultStream">
+            <mat-card class="rxjs-item">{{ item }}</mat-card>
+        </div>
+    </div>
+</div>
